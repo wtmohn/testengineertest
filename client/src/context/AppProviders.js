@@ -22,8 +22,6 @@ function AppProviders({ children }) {
             </UserProvider>
           </AuthProvider>
         </ThemeProvider>
-
-        <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>
     </ErrorBoundary>
   );
