@@ -46,8 +46,7 @@ $ npm install
 
 ### Start MongoDB instance
 
-```brew services start mongodb-community@6.0
-```
+`brew services start mongodb-community@6.0`
 
 ### Start the server in development mode
 
@@ -71,30 +70,3 @@ $ npm start
 
 Now, the app should be running on `http://localhost:3000`.
 
-## Running the tests
-
-### Server
-
-To test API routes
-
-```bash
-# run all tests
-$ npm test
-
-# or
-
-# run all tests in watch mode
-$ npm run test:watch
-```
-
-### Client
-
-To run tests with Cypress first, copy the `client/.env` file to a `client/.env.local`. There is a default password for test users. You do not need to change that. Then simply run:
-
-```bash
-$ npm run cypress:open
-```
-
-## Inspirations
-
-- https://github.com/hagopj13/node-express-boilerplate (server)
