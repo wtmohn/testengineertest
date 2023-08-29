@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "dependencies": {
     "@reach/alert": "^0.15.0",
+    "@faker-js/faker": "^8.0.2",
     "@reach/alert-dialog": "^0.15.0",
     "@reach/dialog": "^0.15.0",
     "@reach/menu-button": "^0.15.1",

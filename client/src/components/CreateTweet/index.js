@@ -27,7 +27,7 @@ export function CreateTweetModal() {
 
   return (
     <DialogOverlay onDismiss={close}>
-      <StyledDialogContent aria-label="Compose new tweet">
+      <StyledDialogContent data-cy="create-tweet-overlay" aria-label="Compose new tweet">
         <Header>
           <Title>Compose new Tweet</Title>
           <CloseButton onClick={close}>
@@ -100,6 +100,7 @@ function CreateTweetForm({ onCreate }) {
       />
       <Button
         primary
+        data-cy="submit-tweet"
         type="submit"
         disabled={
           text.length < 1 || text.length > 280 || createTweetMutation.isLoading

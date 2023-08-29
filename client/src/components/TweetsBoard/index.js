@@ -94,7 +94,7 @@ function SingleTweet({ tweet, queryKey }) {
             <span>{format(new Date(tweet.createdAt), 'dd MMMM yyyy')}</span>
           </ItemGroup>
         </TweetUserGroup>
-        <div>
+        <div data-cy="tweet-text">
           <TweetText>{tweet.text}</TweetText>
         </div>
         <TweetBottomGroup>

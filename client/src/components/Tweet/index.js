@@ -129,7 +129,7 @@ function DisplayTweet({ tweetId }) {
               <LikeIcon liked={liked}>
                 {liked ? <FaHeart /> : <FaRegHeart />}
               </LikeIcon>{' '}
-              <span>{likes.length}</span>
+              <span data-cy="like-count">{likes.length}</span>
             </TweetAction>
           </TweetActionGroup>
         </TweetContent>

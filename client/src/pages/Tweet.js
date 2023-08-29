@@ -7,7 +7,7 @@ function TweetPage() {
 
   return (
     <Container>
-      <div>
+      <div data-cy="tweet-module">
         <DisplayTweet tweetId={tweetId} />
       </div>
     </Container>
