@@ -25,10 +25,12 @@
     "styled-components": "^5.2.3"
   },
   "devDependencies": {
+    "axe-core": "^4.7.2",
     "babel-plugin-macros": "^3.0.1",
-    "cypress": "^4.2.0",
+    "cypress": "^12.17.4",
+    "cypress-axe": "^1.4.0",
     "dotenv": "^8.2.0",
-    "eslint-plugin-cypress": "^2.11.3",
+    "eslint-plugin-cypress": "^2.14.0",
     "prettier": "^2.2.1"
   },
   "scripts": {
