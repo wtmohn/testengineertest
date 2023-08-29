@@ -105,15 +105,16 @@ function EditProfileContainer() {
           <p>Loading...</p>
         ) : updateUserMutation.isError || updateProfileMutation.isError ? (
           <>
-            <FeedbackMessage>
+            <FeedbackMessage data-cy="profile-update-error">
               {updateUserMutation.error?.response?.data?.message}
             </FeedbackMessage>
-            <FeedbackMessage>
+            <FeedbackMessage data-cy="profile-update-error">
               {updateProfileMutation.error?.response?.data?.message}
             </FeedbackMessage>
           </>
         ) : updateUserMutation.isSuccess || updateProfileMutation.isSuccess ? (
-          <FeedbackMessage $isSuccess>
+          <FeedbackMessage  data-cy="profile-update-success"
+          $isSuccess>
             Profile successfully updated!
           </FeedbackMessage>
         ) : (
@@ -135,6 +136,7 @@ function EditProfileContainer() {
           <Label htmlFor="bio">Bio:</Label>
           <Input
             type="text"
+            data-cy="profile-bio"
             name="bio"
             value={values.bio}
             onChange={handleChange}
@@ -145,6 +147,7 @@ function EditProfileContainer() {
           <Label htmlFor="location">Location:</Label>
           <Input
             type="text"
+            data-cy="edit-profile-location"
             name="location"
             value={values.location}
             onChange={handleChange}
@@ -156,6 +159,7 @@ function EditProfileContainer() {
           <Input
             type="text"
             name="website"
+            data-cy="edit-profile-website"
             value={values.website}
             onChange={handleChange}
           />
@@ -166,6 +170,7 @@ function EditProfileContainer() {
           <Input
             type="text"
             name="avatar"
+            data-cy="edit-profile-avatar-url"
             value={values.avatar}
             onChange={handleChange}
           />
@@ -176,6 +181,7 @@ function EditProfileContainer() {
           <Input
             type="text"
             name="backgroundImage"
+            data-cy="edit-profile-background-url"
             value={values.backgroundImage}
             onChange={handleChange}
           />
@@ -195,6 +201,7 @@ function EditProfileContainer() {
               updateUserMutation.isLoading || updateProfileMutation.isLoading
             }
             type="button"
+            data-cy="edit-profile-back-btn"
             onClick={() => history.goBack()}
           >
             Go Back

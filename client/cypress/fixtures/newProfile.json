@@ -1,0 +1,9 @@
+{
+    "name" : "John Doe",
+    "bio": "I am a test account",
+    "location": "The Shire",
+    "website": "https://fake.com",
+    "background": "https://fakeimage.com/background.png",
+    "avatar": "https://fakeavatar.com/avatar.jpg"
+
+}

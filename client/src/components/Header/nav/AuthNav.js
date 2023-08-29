@@ -87,13 +87,15 @@ function AuthNav() {
                   font-size: 1.2rem;
                   font-weight: bold;
                 `}
+                data-cy="auth-nav-name"
               >
                 {user.name}
               </p>
-              <p>@{user.username}</p>
+              <p data-cy="auth-nav-username">
+              @{user.username}</p>
             </div>
             <MenuItems>
-              <MenuLink as={Link} to={`/profile/${user._id}`}>
+              <MenuLink data-cy="auth-nav-profile" as={Link} to={`/profile/${user._id}`}>
                 <FaUserCircle
                   css={`
                     margin-right: 10px;
@@ -101,7 +103,7 @@ function AuthNav() {
                 />
                 Profile
               </MenuLink>
-              <MenuLink as={Link} to={`/settings`}>
+              <MenuLink data-cy="auth-nav-settings" as={Link} to={`/settings`}>
                 <FaCog
                   css={`
                     margin-right: 10px;

@@ -173,7 +173,7 @@ function Profile({ profile }) {
                 margin-top: -60px;
               `}
             >
-              {bio && <div>{bio}</div>}
+              {bio && <div data-cy="profile-bio">{bio}</div>}
 
               <div
                 css={`
@@ -203,16 +203,16 @@ function Profile({ profile }) {
                 `}
               >
                 {location && (
-                  <div>
+                  <div data-cy="profile-location">
                     <FiMapPin /> {location}
                   </div>
                 )}
                 {website && (
-                  <div>
+                  <div data-cy="profile-website">
                     <FiLink /> {website}
                   </div>
                 )}
-                <div>
+                <div data-cy="profile-joined-date">
                   <FiCalendar /> Joined{' '}
                   {format(new Date(createdAt), 'MMMM yyyy')}
                 </div>
